@@ -22,7 +22,7 @@ def generate_yaml_file(yaml_out_path, yolo_dataset_path, class_names):
         "names": class_names,
     }
 
-    yaml_filename = os.path.join(yaml_out_path, "data.yaml"a)
+    yaml_filename = os.path.join(yaml_out_path, "data.yaml")
     
     with open(yaml_filename, "w") as yaml_file:
         yaml.dump(yaml_data, yaml_file, default_flow_style=False)
@@ -68,7 +68,7 @@ def split_dataset(images_folder, labels_folder, ratios):
         if i < num_train:
             destination_image_folder = train_folder
             destination_label_folder = train_folder
-        elif i < num_train + num_test:this
+        elif i < num_train + num_test:
             destination_image_folder = test_folder
             destination_label_folder = test_folder
         else:
