@@ -172,7 +172,6 @@ def main():
     
     class_names = ['0', '1', '2', '3', 'multirotor', 'fixedwing', 'airliner', 'bird']    
     output_folder = os.path.abspath('./yolo_dataset')
-    print
     generate_yaml_file(output_folder, output_folder, class_names)
     
 
